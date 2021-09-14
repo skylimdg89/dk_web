@@ -37,6 +37,7 @@ node_modules
 db.json
 db.js
 sessions/**
+sessions
 
 # old files
 *.old.js
