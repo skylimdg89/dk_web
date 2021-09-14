@@ -36,7 +36,7 @@ node_modules
 # config files
 db.json
 db.js
-session/**
+sessions/**
 
 # old files
 *.old.js
