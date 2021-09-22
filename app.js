@@ -8,11 +8,14 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var topicRouter = require('./routes/topicRoute');
 var authorRouter = require('./routes/authorRoute');
+var apiRouter = require('./routes/apiRoute');
 
 var canvasRouter = require('./routes/canvasRoute');
+var canvasgameRouter = require('./routes/canvasgameRoute');
 var zabbixtoolRouter = require('./routes/zabbixtool');
 var jumpgameRouter = require('./routes/jumpgame');
 var towerdefenseRouter = require('./routes/towerdefenseRoute');
+var flappybirdRouter = require('./routes/flappybirdRoute');
 
 var bodyParser = require('body-parser');
 var compression = require('compression');
@@ -51,9 +54,13 @@ app.use('/users', usersRouter);
 app.use('/topic', topicRouter);
 app.use('/auth', authRouter);
 app.use('/canvas', canvasRouter);
+app.use('/canvasgame', canvasgameRouter);
 app.use('/zabbixtool', zabbixtoolRouter);
 app.use('/jumpgame', jumpgameRouter);
 app.use('/towerdefense', towerdefenseRouter);
+app.use('/flappybird', flappybirdRouter);
+app.use('/api', apiRouter);
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
 	next(createError(404));
